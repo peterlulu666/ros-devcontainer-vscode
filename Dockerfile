@@ -115,7 +115,7 @@ RUN git clone -b enable-xml-fileassociations --depth=1 https://github.com/devrt/
 # enter ROS world
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
 
-EXPOSE 3000 8888
+EXPOSE 3000 8888 4000
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD [ "sudo", "-E", "supervisord", "-n"  ]
