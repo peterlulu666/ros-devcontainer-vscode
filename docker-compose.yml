@@ -4,7 +4,6 @@ services:
     image: devrt/xserver
     ports:
       - "3000:80"
-      - "4000:4000"
   workspace:
     # env_file:
     #   - .env
